@@ -73,7 +73,7 @@ alert tcp any any -> any 80 (msg:"Suspicious session cookie"; content:"Cookie"; 
 c. I reloaded Snort in IDS mode.
 
 Command: 
-sudo snort -A console -c /etc/snort/snort.conf -i eth0
+sudo snort -A console -c /etc/snort/snort.lua -i eth0
 
 d. Then I replayed a test capture with a forged cookie.
 
